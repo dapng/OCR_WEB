@@ -2,7 +2,7 @@ import os
 
 from flask import Flask, render_template, request
 
-# from core import ocr_core
+from core import ocr_core
 
 
 UPLOAD_FOLDER = '/static/uploads/'
@@ -16,7 +16,7 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/upload', methods=['GET', 'POST'])
 def upload_page():
     if request.method == 'POST':
         if 'file' not in request.files:
@@ -38,4 +38,4 @@ def upload_page():
         return render_template('upload.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(threaded=True, port=5000)
