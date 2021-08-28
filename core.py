@@ -1,10 +1,10 @@
-try:
-    from PIL import Image
-except ImportError:
-    import Image
-import pytesseract
+# try:
+#     from PIL import Image
+# except ImportError:
+#     import Image
+# import pytesseract
 
 
-def ocr_core(filename):
-    text = pytesseract.image_to_string(Image.open(filename, lang='rus+eng'))
-    return text
+# def ocr_core(filename):
+#     text = pytesseract.image_to_string(Image.open(filename, lang='rus+eng'))
+#     return text

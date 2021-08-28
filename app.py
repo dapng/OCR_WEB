@@ -2,7 +2,7 @@ import os
 
 from flask import Flask, render_template, request
 
-from core import ocr_core
+# from core import ocr_core
 
 
 UPLOAD_FOLDER = '/static/uploads/'
