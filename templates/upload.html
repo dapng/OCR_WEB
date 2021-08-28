@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Распознавание текста</title>
+    <!-- Bootstrap CDN CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    {% if msg %}
+    <h1 class="text-danger">{{ msg }}</h1>
+    {% endif %}
+    
+    <h1 class="text-danger">Загрузить новый файл</h1>
+    
+    <form method=post enctype=multipart/form-data>
+        <label class="btn btn-danger btn-rounded m-b-40">
+            Выбрать
+            <input type=file name=file hidden>
+        </label>
+            <input class="btn btn-danger btn-rounded m-b-40" type=submit value=Загрузить>
+      </form>
+
+    <h1 class="text-danger">Результат:</h1>
+    {% if img_src %}
+      <img src="{{ img_src }}">
+    {% endif %}
+    
+    {% if extracted_text %}
+      <p> Текст с загруженного изображения был распознан следующим образом: <b> {{ extracted_text }} </b></p>
+    
+    {% else %}
+      Распознанный текст будет показан здесь
+    {% endif %}
+  </body>
+</html>
