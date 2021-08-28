@@ -21,16 +21,17 @@
             Выбрать
             <input type=file name=file hidden>
         </label>
-            <input class="btn btn-danger btn-rounded m-b-40" type=submit value=Загрузить>
+            <input class="btn btn-danger btn-rounded m-b-40" type=submit value=Распознать>
       </form>
 
-    <h1 class="text-danger">Результат:</h1>
+    <h1 class="text-danger">Изображение:</h1>
     {% if img_src %}
-      <img src="{{ img_src }}">
+      <img src="{{ img_src }}" width="30%">
     {% endif %}
     
     {% if extracted_text %}
-      <p> Текст с загруженного изображения был распознан следующим образом: <b> {{ extracted_text }} </b></p>
+      <p> Текст с загруженного изображения был распознан следующим образом: <br> <div "mx-auto" style="width: 200px;"> <b> {{ extracted_text }} </b> </div>
+      </p>
     
     {% else %}
       Распознанный текст будет показан здесь
