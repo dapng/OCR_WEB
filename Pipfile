@@ -7,6 +7,10 @@ name = "pypi"
 url = "https://pypi.org/simple/"
 verify_ssl = true
 
+[[source]]
+url = "https://pypi.org/simple/"
+verify_ssl = true
+
 [packages]
 click = "==7.1.2"
 Flask = "==1.0.2"
