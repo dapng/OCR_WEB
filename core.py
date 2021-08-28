@@ -17,6 +17,7 @@ import pytesseract
 # print(ocr_core('images/2.jpg'))
 
 def ocr_core(filename):
+    pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
     text = pytesseract.image_to_string(Image.open(filename), lang='rus+eng')
     return text
 # print(ocr_core('images/1.jpg'))
