@@ -6,5 +6,5 @@ import pytesseract
 
 
 def ocr_core(filename):
-    text = pytesseract.image_to_string(Image.open(filename))
+    text = pytesseract.image_to_string(Image.open(filename, lang='rus+eng'))
     return text
