@@ -18,9 +18,9 @@ With love, using Linux :heart:
 ## Установка
 
 Любая из Unix-подобных операционных систем на базе ядра Linux
-(я ненавижу Windows, но использую эту операционную систему, в таком случае использовать Windows Subsystem for Linux + Ubuntu)
-Установить [Python](https://www.python.org/downloads/) v3.9+ для работы.
-Установить apt (для *Linux) и requirements.txt (для Python).
+(я ненавижу Windows, но использую эту операционную систему, в таком случае использовать Windows Subsystem for Linux + Ubuntu)  
+Установить [Python](https://www.python.org/downloads/) v3.9+ для работы.  
+Установить apt (для *Linux) и requirements.txt (для Python).  
 
 Установка и запуск.
 
