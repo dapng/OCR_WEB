@@ -36,6 +36,3 @@ def upload_page():
                                    img_src=UPLOAD_FOLDER + file.filename)
     elif request.method == 'GET':
         return render_template('upload.html')
-
-if __name__ == '__main__':
-    app.run(threaded=True, port=5000)
