@@ -1,0 +1,12 @@
+[packages]
+click = "==7.1.2"
+itsdangerous = "==1.1.0"
+pytesseract = "==0.2.6"
+gunicorn = "==19.9.0"
+Flask = "==1.0.2"
+Jinja2 = "==2.11.3"
+MarkupSafe = "==1.1.1"
+Pillow = "==6.2.0"
+Werkzeug = "==1.0.1"
+
+[dev-packages]
