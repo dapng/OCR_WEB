@@ -59,11 +59,11 @@ python3 app.py
 ***
 
 ## Использовано:
-https://devcenter.heroku.com/articles/buildpacks 
-https://elements.heroku.com/buildpacks/matteotiziano/heroku-buildpack-tesseract 
-https://github.com/pathwaysmedical/heroku-buildpack-tesseract 
-https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-apt 
-https://github.com/tesseract-ocr/tesseract 
+https://devcenter.heroku.com/articles/buildpacks
+https://elements.heroku.com/buildpacks/matteotiziano/heroku-buildpack-tesseract
+https://github.com/pathwaysmedical/heroku-buildpack-tesseract
+https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-apt
+https://github.com/tesseract-ocr/tesseract
 
 ## License
 **Free Software**
